@@ -1,5 +1,6 @@
 body {
   font-family: 'Major Mono Display', monospace;
+  background-image: url(https://unsplash.com/photos/OjnmCKmzr3A);
   
 }
 
@@ -20,10 +21,12 @@ h4 {
   padding: 3px 10px;
 }
 
-.header {
+.container {
   min-width: 775px;
   display: flex;
-  justify: flex-end;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-wrap;
   
 }
+
+.hero {
