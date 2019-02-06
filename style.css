@@ -28,3 +28,9 @@ h4 {
   justify-content: flex-end;
   flex-wrap: wrap;
   }
+
+.picture {
+  border-style: solid;
+  border-width: 5px;'
+  border-color: red;
+}
