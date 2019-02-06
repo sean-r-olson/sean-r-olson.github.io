@@ -18,5 +18,5 @@ h3 {
 .header {
   min-width: 775px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
