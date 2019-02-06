@@ -4,9 +4,10 @@ body {
   
 }
 
+.face {
+  
+
 h1 {
-  width: 100%;
-  font-weight: 300;
   text-align: right;
   font-size: 40px;
   color: black;
@@ -28,6 +29,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  
   
 }
 
