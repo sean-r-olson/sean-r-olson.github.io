@@ -3,6 +3,8 @@ body {
   
 }
 
-p {
-  color: red;
+h1 {
+  text-align: right;
+  color: white;
+  background-color: #B4D7A2;
 }
