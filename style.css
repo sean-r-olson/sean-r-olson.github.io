@@ -12,7 +12,7 @@ h1 {
   color: black;
   background-color: #B4D7A2;
   margin: 0px;
-  padding: 20px;
+  padding: 3px 10px;
 }
 
 h4 {
@@ -20,14 +20,14 @@ h4 {
   color: #B4D7A2;
   background-color: black;
   margin: 0px;
-  padding: 20px;
+  padding: 3px 10px;
 }
 
 .container {
   min-width: 775px;
   display: flex;
   justify-content: flex-end;
-  flex-wrap;
+  flex-wrap: wrap;
   
 }
 
