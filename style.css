@@ -8,3 +8,10 @@ h1 {
   color: white;
   background-color: #B4D7A2;
 }
+
+.container {
+  min-width: 775px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
