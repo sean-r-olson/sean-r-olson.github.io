@@ -5,13 +5,19 @@ body {
 
 h1 {
   text-align: right;
-  color: white;
+  color: black;
   background-color: #B4D7A2;
 }
 
-.container {
+h3 {
+  text-align: right;
+  color: #B4D7A2;
+  background-color: black;
+}
+
+.header {
   min-width: 775px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
