@@ -23,7 +23,7 @@ h4 {
 
 .header {
   min-width: 775px;
-  margin: 0px;
+  margin: 1px;
   display: flex;
   flex-direction: column;
   
