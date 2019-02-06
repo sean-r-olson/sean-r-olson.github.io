@@ -11,8 +11,8 @@ h1 {
   font-size: 40px;
   color: black;
   background-color: #B4D7A2;
-  margin: 0px
-  padding: 20 20 20 20
+  margin: 0px;
+  padding: 20px;
 }
 
 h4 {
@@ -20,7 +20,7 @@ h4 {
   color: #B4D7A2;
   background-color: black;
   margin: 0px;
-  padding: 20 20 20 20;
+  padding: 20px;
 }
 
 .container {
