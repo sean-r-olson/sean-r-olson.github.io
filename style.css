@@ -10,7 +10,6 @@ h1 {
 }
 
 h3 {
-  display: block;
   text-align: right;
   color: #B4D7A2;
   background-color: black;
@@ -19,6 +18,5 @@ h3 {
 .header {
   min-width: 775px;
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
 }
