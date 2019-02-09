@@ -53,7 +53,7 @@ h4 {
   margin: 0px 150px;
   padding: 5px;
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   border-style: solid;
  	box-shadow: 10px 10px;
   background-color: white;
@@ -76,7 +76,7 @@ h4 {
 }
 
 .experience {
- 	font-family: 'PT Sans', sans-serif;
+ 	font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
   margin: 10px 400px 10px 10px ;
@@ -97,7 +97,7 @@ h4 {
 }
 
 .job-title {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 
