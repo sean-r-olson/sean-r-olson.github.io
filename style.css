@@ -50,7 +50,7 @@ h4 {
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
-  margin: 10px 150px;
+  margin: 10px 150px 20px 150px;
   padding: 5px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
@@ -120,6 +120,7 @@ h2 {
 }
 
 .education {
+  display: inline-block;
   width: auto;
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
@@ -130,6 +131,7 @@ h2 {
 }
 
 .references {
+  display: inline-block;
   width: auto;
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
