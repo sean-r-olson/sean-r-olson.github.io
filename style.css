@@ -116,8 +116,7 @@ h2 {
 }
 
 .education-details {
-  display: flex;
-  flex: wrap;
+ 
 }
 
 .education {
@@ -141,7 +140,6 @@ h2 {
 }
 
 .references-details {
-   display: flex;
-   flex: wrap;
+  
 }
 
