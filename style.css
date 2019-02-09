@@ -114,7 +114,15 @@ h2 {
   display: flex;
   flex: wrap;
 }
+
+.education-details {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+}
+
 .education {
+  width: auto;
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
