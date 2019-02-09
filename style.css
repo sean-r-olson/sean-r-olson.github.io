@@ -86,6 +86,7 @@ h4 {
 
 .title {
   border-bottom-style: solid;
+  display: block;
 }
 
 .details {
@@ -99,5 +100,26 @@ h4 {
 .job-title {
   font-weight: bold;
 }
+
+.community-involvement {
+  font-family: 'Roboto Mono', monospace;
+  border-style: solid;
+  box-shadow: 10px 10px;
+  margin: 20px 10px 10px 400px ;
+  padding: 10px;
+  background-color: #FF6961;
+}
+
+.education {
+  font-family: 'Roboto Mono', monospace;
+  border-style: solid;
+  box-shadow: 10px 10px;
+  margin: 20px 150px;
+  padding: 10px;
+  background-color: #FF6961;
+  display: flex;
+  flex: wrap;
+}
+
 
 
