@@ -34,23 +34,13 @@ h4 {
   background-color: white;
 }
 
-.picture {
- display: flex;
- flex: wrap;
- justify-content: flex-end;
- padding: 20px;
-
- 
- 
-}
-
 .intro {
   display: flex;
   flex: wrap;
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
-  margin: 10px 150px 30px 150px;
+  margin: 10px 150px 20px 150px;
   padding: 5px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
@@ -71,6 +61,8 @@ h4 {
  display:block;
   margin-left:auto;
   margin-right:auto;
+  margin-bottom: 0px;
+  padding: 0px;
   width:50%; 
   
 }
@@ -79,7 +71,7 @@ h4 {
  	font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
-  margin: 10px 400px 10px 10px ;
+  margin: 10px 400px 20px 10px ;
   padding: 10px;
   background-color: #FFF0AE;
 }
@@ -105,7 +97,7 @@ h4 {
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
-  margin: 20px 10px 10px 400px ;
+  margin: 10px 10px 10px 400px ;
   padding: 10px;
   background-color: #FF6961;
 }
@@ -125,7 +117,7 @@ h2 {
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
-  margin: 20px 200px;
+  margin: 10px 150px;
   padding: 10px;
   background-color: #aec6cf;
 }
@@ -136,7 +128,7 @@ h2 {
   font-family: 'Roboto Mono', monospace;
   border-style: solid;
   box-shadow: 10px 10px;
-  margin: 20px 350px;
+  margin: 10px 300px;
   padding: 10px;
   background-color: #D0C9EA;
 }
