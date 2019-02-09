@@ -130,5 +130,14 @@ h2 {
   background-color: #aec6cf;
 }
 
+.references {
+  width: auto;
+  font-family: 'Roboto Mono', monospace;
+  border-style: solid;
+  box-shadow: 10px 10px;
+  margin: 20px 250px;
+  padding: 10px;
+  background-color: #D0C9EA;
+}
 
 
