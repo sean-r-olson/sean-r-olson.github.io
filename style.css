@@ -79,7 +79,6 @@ h4 {
 
 .employer-details {
   display: inline;
-  flex: wrap;
   justify-content: space-between;
 }
 
