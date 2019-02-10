@@ -77,9 +77,11 @@ h4 {
   display: block;
 }
 
-.employer-details {
-  display: inline;
+.details {
+  display: flex;
+  flex: wrap;
   justify-content: space-between;
+  background-color: black;
 }
 
 .job-title {
