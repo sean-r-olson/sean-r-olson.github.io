@@ -53,9 +53,7 @@ h4 {
 }
 
 .face {
-  border-style: solid;
-  border-width: thick;
-  border-color: #367588;
+  box-shadow: 0px 0px 15px 0px;
   margin: 10px;
 }
 
