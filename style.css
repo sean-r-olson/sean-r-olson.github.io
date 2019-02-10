@@ -24,7 +24,7 @@ h4 {
   border-style: solid;
   min-width: 775px;
   display: flex;
-  flex-direction: row;
+  flex: wrap;
   justify-content: space-between;
   position: sticky;
   top: 0; 
