@@ -33,7 +33,6 @@ h4 {
 .intro {
   display: flex;
   flex: wrap;
-  justify-content: center;
   font-size: 30px;
   font-weight: bold;
   margin: 10px 150px 20px 150px;
