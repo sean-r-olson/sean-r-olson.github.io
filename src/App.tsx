@@ -1,14 +1,95 @@
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material';
 import './App.css';
 import DrawerAppBar from './Layout/Layout';
 
-// Material UI
-// import MuiThemeProvider from '@mui/material/styles';
-// import createTheme from '@mui/material';
+const theme = responsiveFontSizes(createTheme({
+  typography: {
+    fontFamily: 'Major Mono Display',
+  },
+  
+}));
 
-export const App = () => {
+theme.typography.h5 = {
+  fontFamily: 'Major Mono Display',
+  '@media (min-width:0px)': {
+    fontSize: '1rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:600px)': {
+    fontSize: '1.1rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:900px)': {
+    fontSize: '1.2rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:1200px)': {
+    fontSize: '1.3rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:1536px)': {
+    fontSize: '1.4rem',
+    fontWeight: '300',
+  },
+};
+
+theme.typography.h6 = {
+  fontFamily: 'Major Mono Display',
+  '@media (min-width:0px)': {
+    fontSize: '0.9rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:600px)': {
+    fontSize: '1rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:900px)': {
+    fontSize: '1.1rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:1200px)': {
+    fontSize: '1.2rem',
+    fontWeight: '300',
+  },
+  '@media (min-width:1536px)': {
+    fontSize: '1.3rem',
+    fontWeight: '300',
+  },
+};
+
+theme.typography.body1 = {
+  fontFamily: 'Roboto Mono',
+  '@media (min-width:0px)': {
+    fontSize: '0.7rem',
+    fontWeight: '200',
+  },
+  '@media (min-width:600px)': {
+    fontSize: '0.8rem',
+    fontWeight: '200',
+  },
+  '@media (min-width:900px)': {
+    fontSize: '0.9rem',
+    fontWeight: '200',
+  },
+  '@media (min-width:1200px)': {
+    fontSize: '1rem',
+    fontWeight: '200',
+  },
+  '@media (min-width:1536px)': {
+    fontSize: '1.1rem',
+    fontWeight: '200',
+  },
+};
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <DrawerAppBar />
-    </div>
+    <ThemeProvider theme={theme}>
+      <DrawerAppBar/>
+    </ThemeProvider>
   );
 }
+
+export default App;
