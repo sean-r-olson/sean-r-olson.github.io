@@ -234,9 +234,9 @@ export default function DrawerAppBar() {
             hi, i'm sean. i'm a software developer in the twin cities with a passion for all things front end and responsive design.
         </Typography>
       </Box>
-      <Box paddingTop={4} ref={skills} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}}>
+      <Box paddingTop={4} ref={skills} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}} display="flex" justifyContent="center">
         <Toolbar /> 
-        <Grid container textAlign="center">
+        <Grid container textAlign="center" alignItems="center">
           <Grid xs={4} display="block" py={4} px={1} sx={{ backgroundColor: '#e6bd57'}}>
           {skillsItems1.map((item, index) => (
             <Typography variant="h6" paddingBottom={ index !== skillsItems1.length - 1 ? 4 : 0}>
@@ -260,144 +260,159 @@ export default function DrawerAppBar() {
           </Grid>
         </Grid>
       </Box>
-      <Box ref={experience} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3 }}>
+      <Box ref={experience} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3 }} display="flex" justifyContent="center">
         <Toolbar />
-        <Grid mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2}>
-          <Grid mb={1} container justifyContent="space-between"  sx={{ backgroundColor: '#e6bd57', p: 2 }}>
-            <Typography variant="h5">
-              Kipsu | Minneapolis, MN
-            </Typography>
-            <Typography variant="h5">
-              feb 2020 - present
-            </Typography>
+        <Grid 
+          container
+          spacing={0}
+          direction="column"
+          justifyContent="center"
+        >
+            <Grid container mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2} >
+              <Grid mb={1} container justifyContent="space-between"  sx={{ backgroundColor: '#e6bd57', p: 2 }}>
+                <Typography variant="h5">
+                  Kipsu | Minneapolis, MN
+                </Typography>
+                <Typography variant="h5">
+                  feb 2020 - present
+                </Typography>
+              </Grid>
+              <Grid container justifyContent="space-between">
+                <Typography variant="h6">
+                  software engineer
+                </Typography>
+                <Typography variant="h6">
+                  aug 2021 - present
+                </Typography>
+              </Grid>
+              <Grid mb={1}>
+                <Typography>
+                - Worked with the product team and other engineers to build the front end of new features in our core app / microservices.
+                <br/>
+                - Helped to build out a new core front end for the company using React, Typescript, MUI, and Redux Toolkit.
+                <br/>
+                - Mentored a Support Engineer to help prepare them for their transition onto the Engineering team.
+                <br/>
+                - Worked on a team of 5-6 developers and participated in daily and weekly agile ceremonies such as standups and retros. 
+                </Typography>
+              </Grid>
+              <Grid container justifyContent="space-between">
+                <Typography variant="h6">
+                  support engineer
+                </Typography>
+                <Typography variant="h6">
+                  feb 2020 - aug 2021
+                </Typography>
+              </Grid>
+              <Grid mb={1}>
+                <Typography>
+                - Served as the technical expert to help solve customer needs while working as a representative of the support team.
+                <br/>
+                - Pioneered a project to parse guest information on registration cards from our hospitality clients using regular expressions.
+                </Typography>
+              </Grid>
           </Grid>
-          <Grid container justifyContent="space-between">
-            <Typography variant="h6">
-              software engineer
-            </Typography>
-            <Typography variant="h6">
-              aug 2021 - present
-            </Typography>
-          </Grid>
-          <Grid mb={1}>
-            <Typography>
-            - Worked with the product team and other engineers to build the front end of new features in our core app / microservices.
-            <br/>
-            - Helped to build out a new core front end for the company using React, Typescript, MUI, and Redux Toolkit.
-            <br/>
-            - Mentored a Support Engineer to help prepare them for their transition onto the Engineering team.
-            <br/>
-            - Worked on a team of 5-6 developers and participated in daily and weekly agile ceremonies such as standups and retros. 
-            </Typography>
-          </Grid>
-          <Grid container justifyContent="space-between">
-            <Typography variant="h6">
-              support engineer
-            </Typography>
-            <Typography variant="h6">
-              feb 2020 - aug 2021
-            </Typography>
-          </Grid>
-          <Grid mb={1}>
-            <Typography>
-            - Served as the technical expert to help solve customer needs while working as a representative of the support team.
-            <br/>
-            - Pioneered a project to parse guest information on registration cards from our hospitality clients using regular expressions.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2}>
-          <Grid mb={1} container justifyContent="space-between" sx={{backgroundColor: '#e6bd57', p: 2}}>
-            <Typography variant="h5">
-              Prime Digital Academy | Minneapolis, MN
-            </Typography>
-            <Typography variant="h5">
-              May 2019 - sep 2019
-            </Typography>
-          </Grid>
-          <Grid>
-            <Typography mb={1} variant="h6">
-              full stack development student
-            </Typography>
-            <Typography mb={1}>
-              Solo Project: Third Half
-              <br/>
-              - Platform for members of International Gay Rugby, providing a space for the community to connect with one another.
-              <br/>
-              - Technologies used: JavaScript, React, Material UI, CSS, Node, PostgreSQL
-            </Typography>
-            <Typography>
-              Group Project: Kid Pro Quo
-              <br/>
-              - Worked with a team to build a responsive app for our client that allows parents to create and join babysitting “co-ops”.
-              <br/>
-              - Technologies used: JavaScript, React, Semantic UI, CSS, Node, PostgreSQL, Twilio API
-            </Typography>
-          </Grid>
-        </Grid>
-      </Box>
-      <Box ref={education} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3}}>
-        <Toolbar />
-        <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-          <Grid container justifyContent="space-between">
-            <Grid padding={2}>
+          <Grid mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2}>
+            <Grid mb={1} container justifyContent="space-between" sx={{backgroundColor: '#e6bd57', p: 2}}>
               <Typography variant="h5">
                 Prime Digital Academy | Minneapolis, MN
               </Typography>
-              <Typography variant="h6">
-                full stack software engineering certification
-              </Typography>
-            </Grid>
-            <Grid padding={2} xs={4} sx={{ backgroundColor: 'black', color: 'white' }}>
-              <Typography variant="h6">
-                sep 2019
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-          <Grid container justifyContent="space-between">
-            <Grid padding={2}>
               <Typography variant="h5">
-                California Lutheran University | Thousand Oaks, CA
-              </Typography>
-              <Typography variant="h6">
-                b.a. music production
+                May 2019 - sep 2019
               </Typography>
             </Grid>
-            <Grid padding={2} xs={3} sx={{ backgroundColor: 'black', color: 'white' }}>
-              <Typography variant="h6">
-                may 2013
+            <Grid>
+              <Typography mb={1} variant="h6">
+                full stack development student
               </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-          <Grid container justifyContent="space-between">
-            <Grid padding={2}>
-              <Typography variant="h5">
-                Auckland University of Technology | Auckland, Nz
+              <Typography mb={1}>
+                Solo Project: Third Half
+                <br/>
+                - Platform for members of International Gay Rugby, providing a space for the community to connect with one another.
+                <br/>
+                - Technologies used: JavaScript, React, Material UI, CSS, Node, PostgreSQL
               </Typography>
-              <Typography variant="h6">
-                semester abroad
-              </Typography>
-            </Grid>
-            <Grid padding={2} xs={2} sx={{ backgroundColor: 'black', color: 'white' }}>
-              <Typography variant="h6">
-                dec 2011
+              <Typography>
+                Group Project: Kid Pro Quo
+                <br/>
+                - Worked with a team to build a responsive app for our client that allows parents to create and join babysitting “co-ops”.
+                <br/>
+                - Technologies used: JavaScript, React, Semantic UI, CSS, Node, PostgreSQL, Twilio API
               </Typography>
             </Grid>
           </Grid>
         </Grid>
       </Box>
-
-
-
-      <Box ref={community} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}}>
+      <Box ref={education} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3}} display="flex" justifyContent="center">
+        <Toolbar />
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          justifyContent="center"
+        >
+          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid container justifyContent="space-between">
+              <Grid padding={2}>
+                <Typography variant="h5">
+                  Prime Digital Academy | Minneapolis, MN
+                </Typography>
+                <Typography variant="h6">
+                  full stack software engineering certification
+                </Typography>
+              </Grid>
+              <Grid padding={2} xs={4} sx={{ backgroundColor: 'black', color: 'white' }}>
+                <Typography variant="h6">
+                  sep 2019
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid container justifyContent="space-between">
+              <Grid padding={2}>
+                <Typography variant="h5">
+                  California Lutheran University | Thousand Oaks, CA
+                </Typography>
+                <Typography variant="h6">
+                  b.a. music production
+                </Typography>
+              </Grid>
+              <Grid padding={2} xs={3} sx={{ backgroundColor: 'black', color: 'white' }}>
+                <Typography variant="h6">
+                  may 2013
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid container justifyContent="space-between">
+              <Grid padding={2}>
+                <Typography variant="h5">
+                  Auckland University of Technology | Auckland, Nz
+                </Typography>
+                <Typography variant="h6">
+                  semester abroad
+                </Typography>
+              </Grid>
+              <Grid padding={2} xs={2} sx={{ backgroundColor: 'black', color: 'white' }}>
+                <Typography variant="h6">
+                  dec 2011
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box ref={community} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}} display="flex" justifyContent="center">
         <Toolbar/>
-        <Grid mb={4}  sx={{ backgroundColor: '#FAF9F6' }}>
-          <Grid container justifyContent="space-between">
-            <Grid padding={2}>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+        >
+          <Grid container mb={4} justifyContent="space-between" sx={{ backgroundColor: '#FAF9F6'}}>
+            <Grid xs={9} padding={2}>
               <Typography variant="h5">
                 Minneapolis Mayhem Inclusive Rugby | Minneapolis, MN
               </Typography>
@@ -426,9 +441,7 @@ export default function DrawerAppBar() {
               </Typography>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid mb={4} sx={{ backgroundColor: '#FAF9F6'}}>
-          <Grid container justifyContent="space-between">
+          <Grid container justifyContent="space-between" mb={4} sx={{ backgroundColor: '#FAF9F6'}}>
             <Grid padding={2}>
               <Typography variant="h5">
                 Polar Plunge | Minneapolis, MN
@@ -443,9 +456,7 @@ export default function DrawerAppBar() {
               </Typography>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid sx={{ backgroundColor: '#FAF9F6' }}>
-          <Grid container justifyContent="space-between">
+          <Grid container justifyContent="space-between" sx={{ backgroundColor: '#FAF9F6' }}>
             <Grid padding={2}>
               <Typography variant="h5">
                 Fukushima Tsunami Relief | Fukushima, Japan
@@ -460,7 +471,6 @@ export default function DrawerAppBar() {
               </Typography>
             </Grid>
           </Grid>
-
         </Grid>
       </Box>
       <Box ref={contact} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3}}>
