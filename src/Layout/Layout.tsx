@@ -20,9 +20,9 @@ import { useRef } from 'react';
 import '../App.css';
 
 const drawerWidth = 240;
-const skillsItems1 = ['Reactjs', 'Redux', 'css3', 'Angular', 'Responsive design', 'pHp','Git', 'Agile MethodoloGies'];
-const skillsItems2 = ['javascript', 'Redux toolkit', 'less', 'jest','coffeescript', 'nodejs', 'Mysql'];
-const skillsItems3 = ['typescript','Mui', 'HtMl5', 'AWs', 'knockoutjs', 'express', 'postgresql'];
+const skillsItems1 = ['Reactjs', 'Redux', 'Redux toolkit', 'javascript', 'typescript', 'Angular', 'coffeescript', 'knockoutjs'];
+const skillsItems2 = [ 'HtMl5', 'css3', 'Mui', 'semantic ui', 'less', 'Responsive design', 'jest',  ];
+const skillsItems3 = [ 'AWs', 'pHp', 'nodejs', 'Git', 'Agile MethodoloGies',  'express', 'Mysql', 'postgresql'];
 
 export default function Layout() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
