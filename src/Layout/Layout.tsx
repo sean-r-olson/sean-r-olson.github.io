@@ -500,13 +500,13 @@ export default function Layout() {
       <Grid>
         <Grid container>
           <MailOutlineIcon />
-          <Typography color='white' paddingLeft={1}>
+          <Typography color='white' paddingLeft={1} sx={{ fontSize: '16px' }}>
             srolson@callutheran.edu
           </Typography>
         </Grid>
         <Grid container>
           <PhoneIphoneIcon />
-          <Typography color='white' paddingLeft={1}>
+          <Typography color='white' paddingLeft={1} sx={{ fontSize: '16px' }}>
             (805)418-0603
           </Typography>
         </Grid>
