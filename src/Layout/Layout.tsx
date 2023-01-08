@@ -20,12 +20,11 @@ import { useRef } from 'react';
 import '../App.css';
 
 const drawerWidth = 240;
-// const navItems = ['skills', 'experience', 'education', 'community', 'contact'];
 const skillsItems1 = ['Reactjs', 'Redux', 'css3', 'Angular', 'Responsive design', 'pHp','Git', 'Agile MethodoloGies'];
 const skillsItems2 = ['javascript', 'Redux toolkit', 'less', 'jest','coffeescript', 'nodejs', 'Mysql'];
 const skillsItems3 = ['typescript','Mui', 'HtMl5', 'AWs', 'knockoutjs', 'express', 'postgresql'];
 
-export default function DrawerAppBar() {
+export default function Layout() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const main = useRef(null);
   const skills = useRef(null);
@@ -50,52 +49,35 @@ export default function DrawerAppBar() {
       <List>
         <ListItem disablePadding>
           <ListItemButton onClick={() => scrollToSection(skills)} sx={{ textAlign: 'center' }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography sx={{ fontFamily: 'Major Mono Display' }}>SKILLS</Typography>}
-            />
+            <ListItemText primaryTypographyProps={{variant: "h5"}}>SKILLS</ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton onClick={() => scrollToSection(experience)} sx={{ textAlign: 'center' }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography sx={{ fontFamily: 'Major Mono Display' }}>EXPERIENCE</Typography>}
-            />
+            <ListItemText primaryTypographyProps={{variant: "h5"}}>EXPERIENCE</ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton onClick={() => scrollToSection(education)} sx={{ textAlign: 'center' }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography sx={{ fontFamily: 'Major Mono Display' }}>EDUCATION</Typography>}
-            />
+            <ListItemText primaryTypographyProps={{variant: "h5"}}>EDUCATION</ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton onClick={() => scrollToSection(community)} sx={{ textAlign: 'center' }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography sx={{ fontFamily: 'Major Mono Display' }}>COMMUNITY</Typography>}
-            />
+            <ListItemText primaryTypographyProps={{variant: "h5"}}>COMMUNITY</ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton onClick={() => scrollToSection(contact)} sx={{ textAlign: 'center' }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography sx={{ fontFamily: 'Major Mono Display' }}>CONTACT</Typography>}
-            />
+            <ListItemText primaryTypographyProps={{variant: "h5"}}>CONTACT</ListItemText>
           </ListItemButton>
         </ListItem>
       </List>
     </Box>
   );
 
-
   return (
     <Box sx={{ display: 'block', position: 'absolute', width: '100%' }}>
-      {/* <CssBaseline /> */}
       <AppBar position='fixed' sx={{ backgroundColor: 'black' }} component="nav">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <IconButton
@@ -119,9 +101,7 @@ export default function DrawerAppBar() {
                   color: '#fff',
                   '&:hover': {
                     color: '#e6bd57',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
+                  }
                 }
               }
             >
@@ -131,188 +111,238 @@ export default function DrawerAppBar() {
           <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
             <Button
               onClick={() => scrollToSection(skills)}
-              sx={
-                { 
-                  px: 2,
-                  color: '#fff',
-                  '&:hover': {
-                    color: '#b37486',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
-                }
-              }
+              sx={{
+                paddingLeft: '20px',
+                '&:hover': {
+                  '& .MuiTypography-root':{
+                    borderBottom: '4px solid white',
+                }}
+              }}
               >
-              <Typography variant='h6'>skills</Typography>
-            </Button>
+              <Typography variant='h6' sx={
+                { 
+                  color: '#fff',
+                  borderBottom: '4px solid transparent',
+                  '&:hover': {
+                    color: '#b37486'
+                  }
+                }
+              }>SKILLS</Typography>
+            </Button> 
             <Button
               onClick={() => scrollToSection(experience)}
-              sx={
-                { 
-                  px: 2,
-                  color: '#fff',
-                  '&:hover': {
-                    color: '#5b9877',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
-                }
-              }
+              sx={{
+                paddingLeft: '20px',
+                '&:hover': {
+                  '& .MuiTypography-root':{
+                    borderBottom: '4px solid white',
+                }}
+              }}
               >
-              <Typography variant='h6'>experience</Typography>
-            </Button>
+              <Typography variant='h6' sx={
+                { 
+                  color: '#fff',
+                  borderBottom: '4px solid transparent',
+                  '&:hover': {
+                    color: '#5b9877'
+                  }
+                }
+              }>EXPERIENCE</Typography>
+            </Button> 
             <Button
               onClick={() => scrollToSection(education)}
-              sx={
-                { 
-                  px: 2,
-                  color: '#fff',
-                  '&:hover': {
-                    color: '#e6bd57',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
-                }
-              }
+              sx={{
+                paddingLeft: '20px',
+                '&:hover': {
+                  '& .MuiTypography-root':{
+                    borderBottom: '4px solid white',
+                }}
+              }}
               >
-              <Typography variant='h6'>education</Typography>
-            </Button>
+              <Typography variant='h6' sx={
+                { 
+                  color: '#fff',
+                  borderBottom: '4px solid transparent',
+                  '&:hover': {
+                    color: '#e6bd57'
+                  }
+                }
+              }>EDUCATION</Typography>
+            </Button> 
             <Button
               onClick={() => scrollToSection(community)}
-              sx={
-                { 
-                  px: 2,
-                  color: '#fff',
-                  '&:hover': {
-                    color: '#b37486',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
-                }
-              }
+              sx={{
+                paddingLeft: '20px',
+                '&:hover': {
+                  '& .MuiTypography-root':{
+                    borderBottom: '4px solid white',
+                }}
+              }}
               >
-              <Typography variant='h6'>community</Typography>
-            </Button>
+              <Typography variant='h6' sx={
+                { 
+                  color: '#fff',
+                  borderBottom: '4px solid transparent',
+                  '&:hover': {
+                    color: '#b37486'
+                  }
+                }
+              }>COMMUNITY</Typography>
+            </Button> 
             <Button
               onClick={() => scrollToSection(contact)}
-              sx={
-                { 
-                  px: 2,
-                  color: '#fff',
-                  '&:hover': {
-                    color: '#5b9877',
-                    '& .MuiTypography-root':{
-                      borderBottom: '4px solid white',
-                  }}
-                }
-              }
+              sx={{
+                paddingLeft: '20px',
+                '&:hover': {
+                  '& .MuiTypography-root':{
+                    borderBottom: '4px solid white',
+                }}
+              }}
               >
-              <Typography variant='h6'>contact</Typography>
-            </Button>   
+              <Typography variant='h6' sx={
+                { 
+                  color: '#fff',
+                  borderBottom: '4px solid transparent',
+                  '&:hover': {
+                    color: '#5b9877'
+                  }
+                }
+              }>CONTACT</Typography>
+            </Button> 
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      <Box component="nav" sx={{ backgroundColor: '#FAF9F6' }}>
         <Drawer
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, height: '100%' },
           }}
         >
           {drawer}
         </Drawer>
       </Box>
-      <Box ref={main} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3}}>
-        <Toolbar />
+      <Box ref={main} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3 }} display="flex" alignItems="center" justifyContent="center">
         <Typography variant="h6">
             hi, i'm sean. i'm a software developer in the twin cities with a passion for all things front end and responsive design.
         </Typography>
       </Box>
-      <Box paddingTop={4} ref={skills} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}} display="flex" justifyContent="center">
-        <Toolbar /> 
-        <Grid container textAlign="center" alignItems="center">
-          <Grid xs={4} display="block" py={4} px={1} sx={{ backgroundColor: '#e6bd57'}}>
-          {skillsItems1.map((item, index) => (
-            <Typography variant="h6" paddingBottom={ index !== skillsItems1.length - 1 ? 4 : 0}>
-              {item}
-            </Typography>
-          ))}
+      <Box paddingTop={4} ref={skills} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}} display="flex">
+        <Grid
+          container
+          alignContent="center"
+        >
+          <Grid container display="flex" textAlign="center" justifyContent="center" alignItems="center" xs={4} py={4} px={1} sx={{ backgroundColor: '#e6bd57' }} height="75%">
+            <List style={{ width: '100%' }}>
+              {skillsItems1.map((item) => (
+                <ListItem sx={{ paddingTop: "15px", px: "10%", maxWidth: "95%", margin: "auto" }}>
+                  <ListItemText
+                    primaryTypographyProps={{ variant: "h5", 
+                      style: {
+                        wordWrap: 'break-word'
+                      }}}
+                    sx={{ textAlign: "center" }}
+                  >
+                    {item}
+                  </ListItemText>
+                </ListItem>
+            ))}
+            </List>
           </Grid>
-          <Grid xs={4} display="block" py={4} px={1}>
-          {skillsItems2.map((item, index) => (
-            <Typography variant="h6" paddingBottom={ index !== skillsItems1.length - 1 ? 4 : 0}>
-              {item}
-           </Typography>
-          ))}
+          <Grid container display="flex" textAlign="center" justifyContent="center" alignItems="center" xs={4} py={4} px={1} height="75%">
+          <List style={{ width: '100%' }}>
+              {skillsItems2.map((item) => (
+                <ListItem sx={{ paddingTop: "15px", px: "10%", maxWidth: "95%", margin: "auto" }}>
+                  <ListItemText
+                    primaryTypographyProps={{ variant: "h5", 
+                      style: {
+                        wordWrap: 'break-word'
+                      }}}
+                    sx={{ textAlign: "center" }}
+                  >
+                    {item}
+                  </ListItemText>
+                </ListItem>
+              ))}
+            </List>
           </Grid>
-          <Grid xs={4} display="block" py={4} px={1} sx={{ backgroundColor: '#5b9877' }}>
-          {skillsItems3.map((item, index) => (
-            <Typography variant="h6"paddingBottom={ index !== skillsItems1.length - 1 ? 4 : 0}>
-              {item}
-          </Typography>
-          ))}
+          <Grid container display="flex" textAlign="center" justifyContent="center" alignItems="center" xs={4} py={4} px={1} sx={{ backgroundColor: '#5b9877' }} height="75%">
+            <List style={{ width: '100%' }}>
+              {skillsItems3.map((item) => (
+                <ListItem sx={{ paddingTop: "15px", px: "10%", width: "95%", margin: "auto" }}>
+                  <ListItemText
+                    primaryTypographyProps={{ variant: "h5", 
+                      style: {
+                        wordWrap: 'break-word'
+                      }}}
+                    sx={{ textAlign: "center" }}
+                  >
+                    {item}
+                  </ListItemText>
+                </ListItem>
+              ))}
+            </List>
           </Grid>
         </Grid>
       </Box>
-      <Box ref={experience} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3 }} display="flex" justifyContent="center">
-        <Toolbar />
+      <Box ref={experience} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3 }} display="flex">
         <Grid 
           container
           spacing={0}
           direction="column"
           justifyContent="center"
         >
-            <Grid container mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2} >
-              <Grid mb={1} container justifyContent="space-between"  sx={{ backgroundColor: '#e6bd57', p: 2 }}>
-                <Typography variant="h5">
-                  Kipsu | Minneapolis, MN
-                </Typography>
-                <Typography variant="h5">
-                  feb 2020 - present
-                </Typography>
-              </Grid>
-              <Grid container justifyContent="space-between">
-                <Typography variant="h6">
-                  software engineer
-                </Typography>
-                <Typography variant="h6">
-                  aug 2021 - present
-                </Typography>
-              </Grid>
-              <Grid mb={1}>
-                <Typography>
-                - Worked with the product team and other engineers to build the front end of new features in our core app / microservices.
-                <br/>
-                - Helped to build out a new core front end for the company using React, Typescript, MUI, and Redux Toolkit.
-                <br/>
-                - Mentored a Support Engineer to help prepare them for their transition onto the Engineering team.
-                <br/>
-                - Worked on a team of 5-6 developers and participated in daily and weekly agile ceremonies such as standups and retros. 
-                </Typography>
-              </Grid>
-              <Grid container justifyContent="space-between">
-                <Typography variant="h6">
-                  support engineer
-                </Typography>
-                <Typography variant="h6">
-                  feb 2020 - aug 2021
-                </Typography>
-              </Grid>
-              <Grid mb={1}>
-                <Typography>
-                - Served as the technical expert to help solve customer needs while working as a representative of the support team.
-                <br/>
-                - Pioneered a project to parse guest information on registration cards from our hospitality clients using regular expressions.
-                </Typography>
-              </Grid>
+          <Grid container mb={2} borderLeft='#e6bd57 2px solid' paddingLeft={2}>
+            <Grid mb={1} container justifyContent="space-between"  sx={{ backgroundColor: '#e6bd57', p: 2 }}>
+              <Typography variant="h5">
+                Kipsu | Minneapolis, MN
+              </Typography>
+              <Typography variant="h5">
+                feb 2020 - present
+              </Typography>
+            </Grid>
+            <Grid container justifyContent="space-between">
+              <Typography variant="h6">
+                software engineer
+              </Typography>
+              <Typography variant="h6">
+                aug 2021 - present
+              </Typography>
+            </Grid>
+            <Grid mb={1}>
+              <Typography>
+              - Worked with the product team and other engineers to build the front end of new features in our core app / microservices.
+              <br/>
+              - Helped to build out a new core front end for the company using React, Typescript, MUI, and Redux Toolkit.
+              <br/>
+              - Mentored a Support Engineer to help prepare them for their transition onto the Engineering team.
+              <br/>
+              - Worked on a team of 5-6 developers and participated in daily and weekly agile ceremonies such as standups and retros. 
+              </Typography>
+            </Grid>
+            <Grid container justifyContent="space-between">
+              <Typography variant="h6">
+                support engineer
+              </Typography>
+              <Typography variant="h6">
+                feb 2020 - aug 2021
+              </Typography>
+            </Grid>
+            <Grid mb={1}>
+              <Typography>
+              - Served as the technical expert to help solve customer needs while working as a representative of the support team.
+              <br/>
+              - Pioneered a project to parse guest information on registration cards from our hospitality clients using regular expressions.
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid mb={4} borderLeft='#e6bd57 2px solid' paddingLeft={2}>
+          <Grid borderLeft='#e6bd57 2px solid' paddingLeft={2}>
             <Grid mb={1} container justifyContent="space-between" sx={{backgroundColor: '#e6bd57', p: 2}}>
               <Typography variant="h5">
                 Prime Digital Academy | Minneapolis, MN
@@ -343,76 +373,68 @@ export default function DrawerAppBar() {
           </Grid>
         </Grid>
       </Box>
-      <Box ref={education} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3}} display="flex" justifyContent="center">
-        <Toolbar />
+      <Box ref={education} sx={{ backgroundColor: '#e6bd57', height: '100vh', p: 3 }} display="flex">
         <Grid
           container
           spacing={0}
           direction="column"
           justifyContent="center"
         >
-          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-            <Grid container justifyContent="space-between">
-              <Grid padding={2}>
-                <Typography variant="h5">
-                  Prime Digital Academy | Minneapolis, MN
-                </Typography>
-                <Typography variant="h6">
-                  full stack software engineering certification
-                </Typography>
-              </Grid>
-              <Grid padding={2} xs={4} sx={{ backgroundColor: 'black', color: 'white' }}>
-                <Typography variant="h6">
-                  sep 2019
-                </Typography>
-              </Grid>
+          <Grid container mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid xs={7} padding={2}>
+              <Typography variant="h5">
+                Prime Digital Academy | Minneapolis, MN
+              </Typography>
+              <Typography variant="h6">
+                full stack software engineering certification
+              </Typography>
+            </Grid>
+            <Grid xs={5} padding={2} textAlign="center" sx={{ backgroundColor: 'black', color: 'white' }}>
+              <Typography variant="h6">
+                sep 2019
+              </Typography>
             </Grid>
           </Grid>
-          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-            <Grid container justifyContent="space-between">
-              <Grid padding={2}>
-                <Typography variant="h5">
-                  California Lutheran University | Thousand Oaks, CA
-                </Typography>
-                <Typography variant="h6">
-                  b.a. music production
-                </Typography>
-              </Grid>
-              <Grid padding={2} xs={3} sx={{ backgroundColor: 'black', color: 'white' }}>
-                <Typography variant="h6">
-                  may 2013
-                </Typography>
-              </Grid>
+          <Grid container mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid xs={8} padding={2}>
+              <Typography variant="h5">
+                California Lutheran University | Thousand Oaks, CA
+              </Typography>
+              <Typography variant="h6">
+                b.a. music production
+              </Typography>
+            </Grid>
+            <Grid xs={4} padding={2} textAlign="center" sx={{ backgroundColor: 'black', color: 'white' }}>
+              <Typography variant="h6">
+                may 2013
+              </Typography>
             </Grid>
           </Grid>
-          <Grid mb={6} sx={{ backgroundColor: '#b37486'}}>
-            <Grid container justifyContent="space-between">
-              <Grid padding={2}>
-                <Typography variant="h5">
-                  Auckland University of Technology | Auckland, Nz
-                </Typography>
-                <Typography variant="h6">
-                  semester abroad
-                </Typography>
-              </Grid>
-              <Grid padding={2} xs={2} sx={{ backgroundColor: 'black', color: 'white' }}>
-                <Typography variant="h6">
-                  dec 2011
-                </Typography>
-              </Grid>
+          <Grid container mb={6} sx={{ backgroundColor: '#b37486'}}>
+            <Grid xs={9} padding={2}>
+              <Typography variant="h5">
+                Auckland University of Technology | Auckland, Nz
+              </Typography>
+              <Typography variant="h6">
+                semester abroad
+              </Typography>
+            </Grid>
+            <Grid xs={3} padding={2} textAlign="center" sx={{ backgroundColor: 'black', color: 'white' }}>
+              <Typography variant="h6">
+                dec 2011
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
       </Box>
-      <Box ref={community} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3}} display="flex" justifyContent="center">
-        <Toolbar/>
+      <Box ref={community} sx={{ backgroundColor: '#b37486', height: '100vh', p: 3 }} display="flex">
         <Grid
           container
           direction="column"
           justifyContent="center"
         >
-          <Grid container mb={4} justifyContent="space-between" sx={{ backgroundColor: '#FAF9F6'}}>
-            <Grid xs={9} padding={2}>
+          <Grid container mb={4} justifyContent="space-between" sx={{ backgroundColor: '#FAF9F6' }}>
+            <Grid xs={8} padding={2}>
               <Typography variant="h5">
                 Minneapolis Mayhem Inclusive Rugby | Minneapolis, MN
               </Typography>
@@ -435,14 +457,14 @@ export default function DrawerAppBar() {
                 - Tasked with maintaining a strong social media presence. Developed a website for the team. 
               </Typography>
             </Grid>
-            <Grid xs={3} padding={2} sx={{ backgroundColor: '#5b9877'}}>
+            <Grid xs={4} padding={2} sx={{ backgroundColor: '#5b9877'}}>
               <Typography variant="h6">
                 dec 2017 - present
               </Typography>
             </Grid>
           </Grid>
-          <Grid container justifyContent="space-between" mb={4} sx={{ backgroundColor: '#FAF9F6'}}>
-            <Grid padding={2}>
+          <Grid container justifyContent="space-between" mb={4} sx={{ backgroundColor: '#FAF9F6' }}>
+            <Grid xs={8} padding={2}>
               <Typography variant="h5">
                 Polar Plunge | Minneapolis, MN
               </Typography>
@@ -450,14 +472,14 @@ export default function DrawerAppBar() {
                 Annual fundraiser to raise money and awareness for Special Olympics Minnesota.
               </Typography>
             </Grid>
-            <Grid xs={3} padding={2} sx={{ backgroundColor: '#5b9877'}}>
+            <Grid xs={4} padding={2} sx={{ backgroundColor: '#5b9877'}}>
               <Typography variant="h6">
                 june 2019 - present
               </Typography>
             </Grid>
           </Grid>
           <Grid container justifyContent="space-between" sx={{ backgroundColor: '#FAF9F6' }}>
-            <Grid padding={2}>
+            <Grid xs={8} padding={2}>
               <Typography variant="h5">
                 Fukushima Tsunami Relief | Fukushima, Japan
               </Typography>
@@ -465,7 +487,7 @@ export default function DrawerAppBar() {
                 Helped a resident of Fukushima by cleaning debris out of his home and sewer drains.
               </Typography>
             </Grid>
-            <Grid xs={3} padding={2} sx={{ backgroundColor: '#5b9877'}}>
+            <Grid xs={4} padding={2} sx={{ backgroundColor: '#5b9877'}}>
               <Typography variant="h6">
                   May 2011
               </Typography>
@@ -473,32 +495,28 @@ export default function DrawerAppBar() {
           </Grid>
         </Grid>
       </Box>
-      <Box ref={contact} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3}}>
-        <Toolbar />
-      <Grid paddingLeft={4}>
+      <Box ref={contact} sx={{ backgroundColor: '#5b9877', height: '100vh', p: 3 }}>
+      <Toolbar />
+      <Grid>
         <Grid container>
           <MailOutlineIcon />
-          <Typography>
+          <Typography color='white' paddingLeft={1}>
             srolson@callutheran.edu
           </Typography>
         </Grid>
         <Grid container>
           <PhoneIphoneIcon />
-          <Typography>
+          <Typography color='white' paddingLeft={1}>
             (805)418-0603
           </Typography>
         </Grid>
         <Grid container>
           <LinkedInIcon />
-            <Typography>
-              linkedin.com/in/sean-olson-3410
-            </Typography>
+            <a style={{ paddingLeft: '10px' }} href="https://www.linkedin.com/in/sean-olson-3410">linkedin.com/in/sean-olson-3410</a>
         </Grid>
         <Grid container>
           <GitHubIcon />
-            <Typography>
-              github.com/sean-r-olson
-            </Typography>
+            <a style={{ paddingLeft: '10px' }} href="https://www.github.com/sean-r-olson">github.com/sean-r-olson</a>
         </Grid>
       </Grid>
       </Box>

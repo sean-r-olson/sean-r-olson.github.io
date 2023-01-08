@@ -1,12 +1,11 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material';
 import './App.css';
-import DrawerAppBar from './Layout/Layout';
+import Layout from './Layout/Layout';
 
 const theme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: 'Major Mono Display',
   },
-  
 }));
 
 theme.typography.h5 = {
@@ -87,7 +86,7 @@ theme.typography.body1 = {
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <DrawerAppBar/>
+      <Layout/>
     </ThemeProvider>
   );
 }

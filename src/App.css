@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto Mono'
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 .App-menu:hover {
   border-bottom: #282c34 2px;
 }
