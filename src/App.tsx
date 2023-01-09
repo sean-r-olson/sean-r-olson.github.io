@@ -80,6 +80,11 @@ theme.typography.body1 = {
   },
 };
 
+theme.typography.body2 = {
+  fontFamily: 'Roboto Mono',
+  fontSize: '16px',
+}
+
 
 
 

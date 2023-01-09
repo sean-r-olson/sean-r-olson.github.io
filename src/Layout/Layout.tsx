@@ -438,20 +438,26 @@ export default function Layout() {
               <Typography variant="h5">
                 Minneapolis Mayhem Inclusive Rugby | Minneapolis, MN
               </Typography>
+              <Typography variant="h6" paddingTop={1}>
+                captain
+              </Typography>
               <Typography>
-                Events Chair
+                - Lead team in practices and matches. Play a big role in maintaining a positive and encouraging team culture.
+              </Typography>
+              <Typography variant="h6">
+                events chair
               </Typography>
               <Typography>
                 - In charge of organizing fundraising events with local businesses and sponsors for the club.
               </Typography>
-              <Typography>
-                Membership Chair
+              <Typography variant="h6">
+                membership chair
               </Typography>
               <Typography>
                 - Responsible for recruitment, new member enrollment, and maintaining current membership statuses.
               </Typography>
-              <Typography>
-                Communications Chair
+              <Typography variant="h6">
+                communications chair
               </Typography>
               <Typography>
                 - Tasked with maintaining a strong social media presence. Developed a website for the team. 
@@ -500,13 +506,13 @@ export default function Layout() {
       <Grid>
         <Grid container>
           <MailOutlineIcon />
-          <Typography color='white' paddingLeft={1} sx={{ fontSize: '16px' }}>
+          <Typography variant="body2"  color='white' paddingLeft={1}>
             srolson@callutheran.edu
           </Typography>
         </Grid>
         <Grid container>
           <PhoneIphoneIcon />
-          <Typography color='white' paddingLeft={1} sx={{ fontSize: '16px' }}>
+          <Typography variant="body2" color='white' paddingLeft={1}>
             (805)418-0603
           </Typography>
         </Grid>
