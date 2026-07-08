@@ -92,5 +92,11 @@
               </ul>
         </section>
     </main>
+    <script>
+      document.querySelector(".skip-link")?.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.getElementById("main")?.focus({ preventScroll: true });
+      });
+    </script>
   </body>
 </html>
